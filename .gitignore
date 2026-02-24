@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+packages/
+vendor/
+.venv/
+env/
+venv/
+__pycache__/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Maven
+target/
+
+# Gradle
+build/
+.gradle/
+
+# General
+.DS_Store
+*.log
