@@ -38,6 +38,6 @@ if result["normalized_sql"]:
     else:
         print("\n✓ Rule Engine: no issues found.")
 
-    execution_result = _queryExecutor.execute_query(query, Schema.ECOMMERCE)
+    execution_result = _queryExecutor.execute_query(result["normalized_sql"], Schema.ECOMMERCE)
     print("Execution Result:", execution_result)
 
