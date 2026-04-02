@@ -5,11 +5,11 @@ Each rule module exposes a `check(ast)` function that returns
 a standard result dict via `base.make_result()`.
 """
 
-from RuleEngine.rule_aggregate_no_group import check as check_aggregate_no_group
-from RuleEngine.rule_cartesian_join import check as check_cartesian_join
-from RuleEngine.rule_select_star import check as check_select_star
-from RuleEngine.rule_missing_where import check as check_missing_where
-from RuleEngine.rule_right_join import check as check_right_join
+from rules.rule_aggregate_no_group import check as check_aggregate_no_group
+from rules.rule_cartesian_join import check as check_cartesian_join
+from rules.rule_select_star import check as check_select_star
+from rules.rule_missing_where import check as check_missing_where
+from rules.rule_right_join import check as check_right_join
 
 # Ordered list of all rule check functions
 ALL_RULES = [

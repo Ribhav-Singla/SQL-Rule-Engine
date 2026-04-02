@@ -1,8 +1,19 @@
--- Create read-only user
-CREATE USER readonly_user WITH PASSWORD 'readonly_pass';
+-- Create read-only user if it doesn't exist
+DO $$
+BEGIN
+   IF NOT EXISTS (
+      SELECT FROM pg_catalog.pg_roles
+      WHERE rolname = 'readonly_user') THEN
+      CREATE USER readonly_user WITH PASSWORD 'readonly_pass';
+   END IF;
+END
+$$;
+
+-- Drop schema if exists to allow rerunning the seed
+DROP SCHEMA IF EXISTS ecommerce CASCADE;
 
 -- Create schema
-CREATE SCHEMA IF NOT EXISTS ecommerce;
+CREATE SCHEMA ecommerce;
 
 -- Grant read-only access
 GRANT USAGE ON SCHEMA ecommerce TO readonly_user;
@@ -89,7 +100,7 @@ INSERT INTO customers (first_name, last_name, email, phone, city, country, creat
 ('David', 'Brown', 'david.brown@gmail.com', '+61-2-5555-0117', 'Sydney', 'Australia', '2023-10-25'),
 ('Isabella', 'Rossi', 'isabella.rossi@libero.it', '+39-06-5555-0118', 'Rome', 'Italy', '2023-11-11'),
 ('Mohammed', 'Ali', 'mohammed.ali@gmail.com', '+966-11-555-0119', 'Riyadh', 'Saudi Arabia', '2023-11-29'),
-('Elena', 'Volkov', 'elena.volkov@mail.ru', '+7-495-555-0120', 'Moscow', 'Russia', '2023-12-15');
+('Elena', 'Volkov', 'mohammed.ali@gmail.com', '+7-495-555-0120', 'Moscow', 'Russia', '2023-12-15');
 
 -- Categories (8 rows)
 INSERT INTO categories (category_name, description) VALUES
@@ -145,8 +156,8 @@ INSERT INTO orders (customer_id, order_date, status, shipping_address, total_amo
 (13, '2024-08-15', 'Pending', 'CG Road, Ahmedabad, Gujarat 380006', 44.95),
 (17, '2024-09-01', 'Pending', '1 George St, Sydney NSW 2000', 1199.00),
 (18, '2024-09-14', 'Pending', 'Via del Corso 18, 00186 Rome', 229.00),
-(19, '2024-09-28', 'Cancelled', 'King Fahd Rd, Riyadh 12271', 54.99),
-(20, '2024-10-05', 'Cancelled', 'Tverskaya St 15, Moscow 125009', 89.95);
+(1, '2024-09-28', 'Cancelled', 'King Fahd Rd, Riyadh 12271', 54.99),
+(2, '2024-10-05', 'Cancelled', 'Tverskaya St 15, Moscow 125009', 89.95);
 
 -- Order Items (25 rows)
 INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES

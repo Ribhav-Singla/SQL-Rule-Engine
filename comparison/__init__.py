@@ -1,0 +1,1 @@
+from comparison.comparator import compare_hashes

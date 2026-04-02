@@ -2,7 +2,7 @@
 Base helper shared by all rule implementations.
 """
 
-from utils import Category
+from config.enums import Category
 
 
 def make_result(triggered, issue, category, explanation):

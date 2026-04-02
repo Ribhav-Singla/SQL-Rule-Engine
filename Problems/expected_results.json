@@ -1,0 +1,42 @@
+[
+  {
+    "problem_id": "Q01",
+    "result_hash": "c0283824cd382c5fb617a908c8e60a6f4957f62bbba32110563977963fe76161",
+    "result_rows": "[{\"email\": \"mohammed.ali@gmail.com\"}]"
+  },
+  {
+    "problem_id": "Q02",
+    "result_hash": "56c6fc4c8f52c1bfb2874f856a8c8bf8c26ff666a63e798177d1b0471ff6bccc",
+    "result_rows": "[{\"max\": 1299.99}]"
+  },
+  {
+    "problem_id": "Q03",
+    "result_hash": "b4bce0b3d57309efd717eeaf96568fd8fa199fbb138cb29d22001e5004a742ea",
+    "result_rows": "[{\"product_name\": \"Dyson V15 Detect Vacuum\"}, {\"product_name\": \"KitchenAid Stand Mixer\"}, {\"product_name\": \"MacBook Air M3 15-inch\"}, {\"product_name\": \"Samsung Galaxy S24 Ultra\"}, {\"product_name\": \"Sony WH-1000XM5 Headphones\"}, {\"product_name\": \"iPhone 15 Pro Max 256GB\"}]"
+  },
+  {
+    "problem_id": "Q04",
+    "result_hash": "77e8d04f861dcadd54fc5b1ae629f54e6668ba3f826ad0039457d23d3407cc17",
+    "result_rows": "[{\"brand\": \"Ace Books\", \"category_id\": 4, \"price\": 14.99, \"product_id\": 12, \"product_name\": \"Dune by Frank Herbert\", \"rank\": 2, \"rating\": 4.7, \"stock_quantity\": 320}, {\"brand\": \"Apple\", \"category_id\": 1, \"price\": 1199.0, \"product_id\": 1, \"product_name\": \"iPhone 15 Pro Max 256GB\", \"rank\": 3, \"rating\": 4.7, \"stock_quantity\": 45}, {\"brand\": \"Apple\", \"category_id\": 1, \"price\": 1299.0, \"product_id\": 4, \"product_name\": \"MacBook Air M3 15-inch\", \"rank\": 2, \"rating\": 4.9, \"stock_quantity\": 25}, {\"brand\": \"Catan Studio\", \"category_id\": 7, \"price\": 44.99, \"product_id\": 18, \"product_name\": \"Settlers of Catan Board Game\", \"rank\": 2, \"rating\": 4.7, \"stock_quantity\": 150}, {\"brand\": \"CeraVe\", \"category_id\": 6, \"price\": 18.99, \"product_id\": 15, \"product_name\": \"CeraVe Moisturizing Cream 16oz\", \"rank\": 1, \"rating\": 4.7, \"stock_quantity\": 600}, {\"brand\": \"Comvita\", \"category_id\": 8, \"price\": 54.99, \"product_id\": 20, \"product_name\": \"Manuka Honey UMF 15+ 500g\", \"rank\": 1, \"rating\": 4.6, \"stock_quantity\": 80}, {\"brand\": \"Dyson\", \"category_id\": 3, \"price\": 749.99, \"product_id\": 9, \"product_name\": \"Dyson V15 Detect Vacuum\", \"rank\": 1, \"rating\": 4.6, \"stock_quantity\": 40}, {\"brand\": \"Hydro Flask\", \"category_id\": 5, \"price\": 44.95, \"product_id\": 14, \"product_name\": \"Hydro Flask 32oz Water Bottle\", \"rank\": 1, \"rating\": 4.6, \"stock_quantity\": 250}, {\"brand\": \"Instant Pot\", \"category_id\": 3, \"price\": 89.95, \"product_id\": 8, \"product_name\": \"Instant Pot Duo 7-in-1 (6 Qt)\", \"rank\": 3, \"rating\": 4.7, \"stock_quantity\": 300}, {\"brand\": \"KitchenAid\", \"category_id\": 3, \"price\": 379.99, \"product_id\": 10, \"product_name\": \"KitchenAid Stand Mixer\", \"rank\": 2, \"rating\": 4.8, \"stock_quantity\": 55}, {\"brand\": \"LEGO\", \"category_id\": 7, \"price\": 169.99, \"product_id\": 17, \"product_name\": \"LEGO Star Wars Millennium Falcon\", \"rank\": 1, \"rating\": 4.9, \"stock_quantity\": 60}, {\"brand\": \"Lavazza\", \"category_id\": 8, \"price\": 21.99, \"product_id\": 19, \"product_name\": \"Lavazza Super Crema Espresso 2.2lb\", \"rank\": 2, \"rating\": 4.5, \"stock_quantity\": 340}, {\"brand\": \"Levi's\", \"category_id\": 2, \"price\": 69.5, \"product_id\": 6, \"product_name\": \"Levi's 501 Original Fit Jeans\", \"rank\": 3, \"rating\": 4.3, \"stock_quantity\": 180}, {\"brand\": \"Manduka\", \"category_id\": 5, \"price\": 34.99, \"product_id\": 13, \"product_name\": \"Yoga Mat Premium 6mm\", \"rank\": 2, \"rating\": 4.5, \"stock_quantity\": 400}, {\"brand\": \"Nike\", \"category_id\": 2, \"price\": 150.0, \"product_id\": 5, \"product_name\": \"Nike Air Max 270 Running Shoes\", \"rank\": 2, \"rating\": 4.4, \"stock_quantity\": 200}, {\"brand\": \"Penguin\", \"category_id\": 4, \"price\": 16.99, \"product_id\": 11, \"product_name\": \"Atomic Habits by James Clear\", \"rank\": 1, \"rating\": 4.9, \"stock_quantity\": 500}, {\"brand\": \"Samsung\", \"category_id\": 1, \"price\": 1299.99, \"product_id\": 2, \"product_name\": \"Samsung Galaxy S24 Ultra\", \"rank\": 1, \"rating\": 4.6, \"stock_quantity\": 30}, {\"brand\": \"The North Face\", \"category_id\": 2, \"price\": 229.0, \"product_id\": 7, \"product_name\": \"The North Face Puffer Jacket\", \"rank\": 1, \"rating\": 4.5, \"stock_quantity\": 75}, {\"brand\": \"The Ordinary\", \"category_id\": 6, \"price\": 11.9, \"product_id\": 16, \"product_name\": \"Ordinary Niacinamide Serum\", \"rank\": 2, \"rating\": 4.4, \"stock_quantity\": 450}]"
+  },
+  {
+    "problem_id": "Q05",
+    "result_hash": "e30a91e8717881a0d5aebfa396c5603f75d335ecead90d847c06b0e4bb4b72cc",
+    "result_rows": "[{\"customer_id\": 19}, {\"customer_id\": 20}]"
+  },
+  {
+    "problem_id": "Q06",
+    "result_hash": "1e347a6aec2e079af1f927e5e7ce000ef9a33304e0fb3a2a18972588eb3bf469",
+    "result_rows": "[{\"item_count\": 2, \"order_id\": 12}, {\"item_count\": 2, \"order_id\": 1}, {\"item_count\": 2, \"order_id\": 7}, {\"item_count\": 2, \"order_id\": 9}, {\"item_count\": 3, \"order_id\": 4}]"
+  },
+  {
+    "problem_id": "Q07",
+    "result_hash": "1c00c01a538f8c546085e52ef07c8fc5e13e97254da069c5bf08bcde21076d25",
+    "result_rows": "[{\"order_date\": \"2024-01-10\", \"running_total\": 1548.99}, {\"order_date\": \"2024-01-18\", \"running_total\": 2848.98}, {\"order_date\": \"2024-02-03\", \"running_total\": 3198.97}, {\"order_date\": \"2024-02-14\", \"running_total\": 3438.47}, {\"order_date\": \"2024-03-01\", \"running_total\": 3528.42}, {\"order_date\": \"2024-03-12\", \"running_total\": 4727.42}, {\"order_date\": \"2024-04-05\", \"running_total\": 5152.36}, {\"order_date\": \"2024-04-20\", \"running_total\": 5902.35}, {\"order_date\": \"2024-05-08\", \"running_total\": 5934.33}, {\"order_date\": \"2024-05-22\", \"running_total\": 6084.33}, {\"order_date\": \"2024-06-10\", \"running_total\": 7383.33}, {\"order_date\": \"2024-06-25\", \"running_total\": 7598.31}, {\"order_date\": \"2024-07-08\", \"running_total\": 7667.81}, {\"order_date\": \"2024-07-19\", \"running_total\": 8047.8}, {\"order_date\": \"2024-08-02\", \"running_total\": 8217.79}, {\"order_date\": \"2024-08-15\", \"running_total\": 8262.74}, {\"order_date\": \"2024-09-01\", \"running_total\": 9461.74}, {\"order_date\": \"2024-09-14\", \"running_total\": 9690.74}, {\"order_date\": \"2024-09-28\", \"running_total\": 9745.73}, {\"order_date\": \"2024-10-05\", \"running_total\": 9835.68}]"
+  },
+  {
+    "problem_id": "Q08",
+    "result_hash": "f3bdef39b0487374fa2f679c99947b68ee9469ffe6f18365eafe3ca1e5422a9d",
+    "result_rows": "[{\"customer_id\": 1, \"total_revenue\": 1603.98}, {\"customer_id\": 10, \"total_revenue\": 424.94}, {\"customer_id\": 11, \"total_revenue\": 69.5}, {\"customer_id\": 12, \"total_revenue\": 31.98}, {\"customer_id\": 13, \"total_revenue\": 44.95}, {\"customer_id\": 14, \"total_revenue\": 214.98}, {\"customer_id\": 15, \"total_revenue\": 379.99}, {\"customer_id\": 16, \"total_revenue\": 169.99}, {\"customer_id\": 17, \"total_revenue\": 1199.0}, {\"customer_id\": 18, \"total_revenue\": 229.0}, {\"customer_id\": 2, \"total_revenue\": 329.45}, {\"customer_id\": 3, \"total_revenue\": 1299.99}, {\"customer_id\": 4, \"total_revenue\": 1199.0}, {\"customer_id\": 5, \"total_revenue\": 349.99}, {\"customer_id\": 6, \"total_revenue\": 749.99}, {\"customer_id\": 7, \"total_revenue\": 150.0}, {\"customer_id\": 8, \"total_revenue\": 89.95}, {\"customer_id\": 9, \"total_revenue\": 1299.0}]"
+  }
+]

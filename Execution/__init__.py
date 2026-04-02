@@ -1,1 +1,1 @@
-from Execution.queryExecutor import _queryExecutor
+from execution.query_executor import QueryExecutor

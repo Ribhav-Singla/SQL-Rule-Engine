@@ -8,8 +8,8 @@ Example bad query:
 """
 
 from sqlglot import exp
-from utils import Category
-from RuleEngine.base import make_result
+from config.enums import Category
+from rules.base import make_result
 
 ISSUE = "missing_where"
 CATEGORY = Category.PERFORMANCE
