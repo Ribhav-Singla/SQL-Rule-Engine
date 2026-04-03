@@ -53,7 +53,10 @@ class QueryExecutor:
 
                     if cursor.description:
                         result["columns"] = [desc[0] for desc in cursor.description]
-                        result["rows"] = cursor.fetchall()
+                        raw_rows = cursor.fetchall()
+                        result["rows"] = [
+                            dict(zip(result["columns"], row)) for row in raw_rows
+                        ]
                         result["row_count"] = len(result["rows"])
 
                     result["execution_time"] = time.time() - start_time

@@ -18,8 +18,7 @@ class EvaluateRequest(BaseModel):
     """Full pipeline: evaluate a user's SQL query."""
     sql: str = Field(..., example="SELECT * FROM customers")
     schema_name: SchemaName = Field(..., example="ecommerce")
-    expected_hash: str = Field(..., description="Pre-computed SHA256 of expected normalized result")
-    problem_id: Optional[str] = Field(None, description="Identifier of the problem being attempted")
+    problem_id: str = Field(..., description="Identifier of the problem being attempted; used to fetch expected hash from DB")
 
 
 class NormalizeRequest(BaseModel):

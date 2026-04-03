@@ -73,7 +73,7 @@ def evaluate(req: EvaluateRequest):
     rules + execute → hash → compare → feedback → cache update.
     """
     schema = Schema(req.schema_name.value)
-    result = evaluate_query(req.sql, schema, req.expected_hash, req.problem_id)
+    result = evaluate_query(req.sql, schema, req.problem_id)
 
     if "error" in result:
         raise HTTPException(status_code=400, detail=result["error"])

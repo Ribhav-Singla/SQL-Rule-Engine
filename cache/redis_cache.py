@@ -51,7 +51,17 @@ class CacheService:
         if not self._client:
             self.connect()
 
-        payload = json.dumps(result)
+        from decimal import Decimal
+        from datetime import date, datetime
+
+        def _default(obj):
+            if isinstance(obj, (datetime, date)):
+                return obj.isoformat()
+            if isinstance(obj, Decimal):
+                return float(obj)
+            raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
+
+        payload = json.dumps(result, default=_default)
         if ttl:
             self._client.setex(fingerprint, ttl, payload)
         else:
