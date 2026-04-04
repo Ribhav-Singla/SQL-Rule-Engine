@@ -1,3 +1,6 @@
+import json
+import os
+
 from fastapi import APIRouter, HTTPException
 
 from api.schemas import (
@@ -5,6 +8,7 @@ from api.schemas import (
     NormalizeRequest, NormalizeResponse,
     FingerprintRequest, FingerprintResponse,
     RulesRequest, RulesResponse, RuleIssue,
+    ProblemResponse,
 )
 from config.enums import Schema
 from normalization.query import normalize_sql
@@ -14,11 +18,33 @@ from evaluator import evaluate_query
 
 router = APIRouter()
 
+# Load problems once at startup
+_PROBLEMS_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)), "Problems", "problems.json"
+)
+with open(_PROBLEMS_PATH, "r", encoding="utf-8") as f:
+    _PROBLEMS: list[dict] = json.load(f)
+
 
 @router.get("/health")
 def health_check():
     """Health check endpoint."""
     return {"status": "ok"}
+
+
+@router.get("/problems", response_model=list[ProblemResponse])
+def list_problems():
+    """Return all available SQL problems."""
+    return _PROBLEMS
+
+
+@router.get("/problems/{problem_id}", response_model=ProblemResponse)
+def get_problem(problem_id: str):
+    """Return a single SQL problem by ID."""
+    for p in _PROBLEMS:
+        if p["problem_id"] == problem_id:
+            return p
+    raise HTTPException(status_code=404, detail=f"Problem '{problem_id}' not found")
 
 
 @router.post("/normalize", response_model=NormalizeResponse)

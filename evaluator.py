@@ -59,7 +59,7 @@ def evaluate_query(sql, schema, problem_id: str):
             return {
                 "cached": True,
                 "fingerprint": fingerprint,
-                "feedback" : {},
+                # "feedback" : {},
                 **cached,
             }
     except Exception:
@@ -81,8 +81,8 @@ def evaluate_query(sql, schema, problem_id: str):
     comparison = hash_and_compare(normalized, expected_hash)
 
     # Step 9: Generate feedback
-    # feedback = generate_feedback(comparison, rule_results)
-    feedback = {}
+    feedback = generate_feedback(comparison, rule_results)
+    # feedback = {}
 
     # Step 10: Cache update
     columns = execution.get("columns", [])

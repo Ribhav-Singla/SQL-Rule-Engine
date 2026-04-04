@@ -63,6 +63,16 @@ class RulesResponse(BaseModel):
     issues: list[RuleIssue]
 
 
+class QuestionAttempt(BaseModel):
+    problem_id: Optional[str] = None
+    raw_sql: Optional[str] = None
+    normalized_sql: Optional[str] = None
+    runtime_status: Optional[str] = None
+    preview_columns: Optional[list[str]] = None
+    preview_rows: Optional[list[dict]] = None
+    row_count: Optional[int] = None
+
+
 class EvaluateResponse(BaseModel):
     cached: Optional[bool] = None
     fingerprint: Optional[str] = None
@@ -70,4 +80,13 @@ class EvaluateResponse(BaseModel):
     correct: Optional[bool] = None
     rule_results: Optional[list[dict]] = None
     feedback: Optional[dict] = None
+    question_attempt: Optional[QuestionAttempt] = None
     error: Optional[str] = None
+
+
+class ProblemResponse(BaseModel):
+    problem_id: str
+    title: str
+    pattern: str
+    schema: str
+    query: str
