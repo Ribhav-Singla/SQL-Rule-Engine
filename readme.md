@@ -6,7 +6,7 @@
 3. Run docker
    docker-compose up -d
 4. run backend
-   uvicorn app.main:app --reload --port 8000
+   uvicorn main:app --reload --port 8000
 5. run frontend
    cd frontend
    npm install
